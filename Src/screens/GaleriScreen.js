@@ -1,15 +1,13 @@
 import React from 'react';
 import { StyleSheet, View, FlatList, Image, Dimensions, TouchableOpacity, Modal } from 'react-native';
 
-const {width, height} = Dimensions.get("window");
-
-
+const {width, height} = Dimensions.get('window');
 
 function Item({ item }) {
   return (
     <View>
       <TouchableOpacity>
-        <Image source={{uri:item.photo}}  style={{width:width/4, height:250, margin: 3}} />
+        <Image source={{uri:item.photo}}  style={{width:width/2, height:200, margin: 3}} />
       </TouchableOpacity>
     </View>
   );
@@ -137,7 +135,67 @@ export default class GaleriScreen extends React.Component {
         },
         {
           "photo": "https://traverse.id/wp-content/uploads/2018/02/Situ-Patenggang-Dihipnotis-oleh-Lansekap-Alam-Ciwidey.jpg"
-        }
+        },
+        {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_784389145.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_1166262631.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_1061447597.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_575852944.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_639390439.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_1044523435.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_344744387.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_1091842955.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_1096829093.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_1075658042.jpg?tr=dpr-1,w-675"
+      },
+      {
+          "photo": "https://2.bp.blogspot.com/-JkYZt0id8OU/Wo7Jd8P1PcI/AAAAAAAAGck/TevVKdjIzdIQulOwKkIsgZ6Pw0th7qX3wCLcBGAs/s1600/goa-rong-view.jpg"
+      },
+      {
+        "photo": "https://www.gotravelly.com/blog/wp-content/uploads/2018/04/pantai-pecaron.jpg"
+      },
+      {
+        "photo": "https://www.gotravelly.com/blog/wp-content/uploads/2018/04/pantai-bandengan.jpg"
+      },
+      {
+        "photo": "https://www.gotravelly.com/blog/wp-content/uploads/2018/04/punthuk-setumbu.jpg"
+      },
+      {
+        "photo": "https://antarejatour.com/wp-content/uploads/2019/02/Air-Terjun-Tlogo-Muncar-sumber-ig-yusuf_kudi.jpg"
+      },
+      {
+        "photo": "https://eksotisjogja.com/wp-content/uploads/2016/12/Candi-Borobudur-Keajaiban-Dunia-Milik-Indonesia-FILEminimizer.jpg"
+      },
+      {
+        "photo": "https://wisatarakyat.com/wp-content/uploads/2020/10/Goa-petruk-Kebumen-1.jpg"
+      },
+      {
+        "photo": "https://www.nativeindonesia.com/wp-content/uploads/2020/03/Pantai-Karang-Bolong-Kebumen.jpg"
+      },
+      {
+        "photo": "https://anekatempatwisata.com/wp-content/uploads/2014/03/wisata-Kepulauan-Karimunjawa.jpg"
+      },
+      {
+        "photo": "https://gunung.id/wp-content/uploads/2018/09/grojogan-sewu-tawangmangu.jpg"
+    },
       
     ]
   }
@@ -149,7 +207,7 @@ export default class GaleriScreen extends React.Component {
         <FlatList
           style={{flex:1}}
           data={this.state.data}
-          numColumns={4}
+          numColumns={2}
           renderItem={({ item }) => <Item item={item}/>}
 
         />
