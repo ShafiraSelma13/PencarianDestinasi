@@ -179,7 +179,7 @@ import { event } from 'react-native-reanimated';
     container: {
       flex: 1,
       backgroundColor: 'bisque',
-      marginTop:60
+      marginTop:3
     },
     listItem:{
       margin:10,
